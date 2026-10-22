@@ -37,7 +37,7 @@ function postorderTraversal(root) {
   while (curr) {
     let left = curr.left;
     let right = curr.right;
-
+ 
     if ((left === null && right === null) || (state === 'F') || 
         (state === 'R' && right === null)) {
       vals.push(curr.val);
